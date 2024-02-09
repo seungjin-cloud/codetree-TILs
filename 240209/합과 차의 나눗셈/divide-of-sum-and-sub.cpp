@@ -1,14 +1,15 @@
 #include <iostream>
 #include <cmath>
-
-using namespace std;
+#include <iomanip>
 
 int main() {
-    // 여기에 코드를 작성해주세요.
     int a, b;
-    cin >> a >> b;
-    double res = static_cast<double>(a + b) / (a - b);
-    res = round(res * 100.0) / 100.0;
-    cout << res;
+    std::cin >> a >> b;
+
+    double result = static_cast<double>(a + b) / (a - b);
+    result = round(result * 100) / 100; // 반올림하여 소수점 둘째 자리까지 표시
+
+    std::cout << std::fixed << std::setprecision(2) << result << std::endl;
+
     return 0;
 }
