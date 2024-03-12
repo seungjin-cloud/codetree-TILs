@@ -15,5 +15,6 @@ int main() {
     if(a>d){cout<<"1";}else{cout<<"0";}
     cout<<endl;
     if(a>e){cout<<"1";}else{cout<<"0";}
+    cout<<endl;
     return 0;
 }
