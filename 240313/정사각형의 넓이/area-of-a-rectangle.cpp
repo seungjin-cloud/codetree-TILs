@@ -8,12 +8,9 @@ int main() {
     int n;
     cin >> n;
     n = square_area(n);
+    cout << n << endl;
     if (n < 5)
     {
         cout << "tiny";
-    }
-    else
-    {
-        cout << n;
     }
 }
