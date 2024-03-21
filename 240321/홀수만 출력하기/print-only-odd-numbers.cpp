@@ -13,5 +13,7 @@ int main() {
     for(int i=0;i<n;i++){
         if(a[i]%3==0){cout<<a[i]<<endl;}
     }
+
+    delete []a;
     return 0;
 }
